@@ -26,7 +26,7 @@ export default function UserStock() {
   
     const fetchStock = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/portfolio");
+        const response = await axios.get("https://outstanding-gray-xerus.cyclic.app/portfolio");
         setStock(response.data.stock);
         console.log(response.data.stock);
       } catch (error) {
@@ -36,7 +36,7 @@ export default function UserStock() {
 
     const deleteStock = async(_id) =>{
          console.log("running",_id);
-          let res = await fetch(`http://localhost:8080/portfolio/${_id}`,{
+          let res = await fetch(`https://outstanding-gray-xerus.cyclic.app/${_id}`,{
             method:"DELETE",
             headers:{'content-type':'application-json'}
           });     
