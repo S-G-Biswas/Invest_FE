@@ -14,7 +14,7 @@ const Allstocks = () => {
 
   const fetchStock = async () => {
     try {
-      const response = await axios.get("https://outstanding-gray-xerus.cyclic.app/users/allstocks",
+      const response = await axios.get("https://gentle-lapel-fawn.cyclic.app/users/allstocks",
       {
         method:"GET",
         headers:{

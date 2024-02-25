@@ -26,7 +26,7 @@ export default function UserStock() {
   
     const fetchStock = async () => {
       try {
-        const response = await axios.get("https://outstanding-gray-xerus.cyclic.app/portfolio");
+        const response = await axios.get("https://gentle-lapel-fawn.cyclic.app/portfolio");
         setStock(response.data.stock);
         console.log(response.data.stock);
       } catch (error) {
@@ -36,10 +36,11 @@ export default function UserStock() {
 
     const deleteStock = async(_id) =>{
          console.log("running",_id);
-          let res = await fetch(`https://outstanding-gray-xerus.cyclic.app/${_id}`,{
+          let res = await fetch(`https://gentle-lapel-fawn.cyclic.app/${_id}`,{
             method:"DELETE",
             headers:{'content-type':'application-json'}
-          });     
+          });
+          console.log(res);     
     }
   
     return (
@@ -61,7 +62,7 @@ export default function UserStock() {
               <Tbody>
               {
                 stock.map((curStock) =>{
-                   const {_id, name, price, returns} = curStock;
+                   const {_id,name, price, returns} = curStock;
                    console.log(curStock)
 
                    return(
