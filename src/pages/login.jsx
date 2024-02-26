@@ -10,7 +10,7 @@ export default function Login() {
     e.preventDefault();
 
     console.log(email, password);
-    fetch("https://gentle-lapel-fawn.cyclic.app/users/login", {
+    fetch("https://real-teal-crow-kilt.cyclic.app/users/login", {
       method: "POST",
       crossDomain: true,
       headers: {
