@@ -22,7 +22,7 @@ export default function UserStock() {
   
     useEffect(() => {
       fetchStock();
-    }, []);
+    }, [stock]);
   
     const fetchStock = async () => {
       try {
