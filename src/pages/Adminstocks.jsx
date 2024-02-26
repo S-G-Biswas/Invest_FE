@@ -195,7 +195,7 @@ const Adminstocks = () => {
     <div>
       <h2 style={{ color: "yellow" }}>Stocks Available are:</h2>
       <Box>
-        <Button onClick={() => setIsModalOpen(true)}>ADD STOCK</Button>
+        <Button style={{ backgroundColor: 'black', color: 'white' }} onClick={() => setIsModalOpen(true)}>ADD STOCK</Button>
       </Box>
       <div
         style={{
@@ -234,8 +234,8 @@ const Adminstocks = () => {
               </CardBody>
 
               <CardFooter gap="4" justifyContent="center">
-                <Button onClick={() => handleEditStock(item)}>EDIT</Button>
-                <Button onClick={() => handleDeleteStock(item._id)}>
+                <Button style={{ backgroundColor: 'black', color: 'white' }} onClick={() => handleEditStock(item)}>EDIT</Button>
+                <Button style={{ backgroundColor: 'black', color: 'white' }} onClick={() => handleDeleteStock(item._id)}>
                   DELETE
                 </Button>
               </CardFooter>
@@ -245,15 +245,15 @@ const Adminstocks = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "center", gap: "2%" }}>
         <button
-          style={{ color: "yellow" }}
+          style={{color:"yellow",fontSize:"20px"}}
           onClick={goToPreviousPage}
           disabled={currentPage === 1}
         >
           Previous
         </button>
-        <span style={{ color: "yellow" }}>{currentPage}</span>
+        <span style={{color:"yellow",fontSize:"20px"}}>{currentPage}</span>
         <button
-          style={{ color: "yellow" }}
+          style={{color:"yellow",fontSize:"20px"}}
           onClick={goToNextPage}
           disabled={currentPage === Math.ceil(adminstock.length / itemsPerPage)}
         >
@@ -344,20 +344,19 @@ const Adminstocks = () => {
 
           <ModalFooter>
             {modalMode === "add" ? (
-              <Button bg={"teal.500"} color={"white"} onClick={handleAddStock}>
+              <Button style={{ backgroundColor: 'black', color: 'white' }} onClick={handleAddStock}>
                 Add
               </Button>
             ) : (
               <Button
-                bg={"teal.500"}
-                color={"white"}
+              style={{ backgroundColor: 'black', color: 'white' }}
                 disabled={!isFormValid}
                 onClick={handleUpdate}
               >
                 Update
               </Button>
             )}
-            <Button ml={3} onClick={handleModalClose}>
+            <Button ml={3} style={{ backgroundColor: 'black', color: 'white' }} onClick={handleModalClose}>
               Cancel
             </Button>
           </ModalFooter>
