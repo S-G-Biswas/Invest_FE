@@ -36,7 +36,7 @@ export default function UserStock() {
 
     const deleteStock = async(_id) =>{
          console.log("running",_id);
-          let res = await fetch(`https://real-teal-crow-kilt.cyclic.app/${_id}`,{
+          let res = await fetch(`https://real-teal-crow-kilt.cyclic.app/portfolio/${_id}`,{
             method:"DELETE",
             headers:{'content-type':'application-json'}
           });
