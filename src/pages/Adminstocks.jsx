@@ -43,7 +43,7 @@ const Adminstocks = () => {
 
   const fetchAdminStock = async () => {
     try {
-      const response = await axios.get("https://real-teal-crow-kilt.cyclic.app/adminstocks/",{
+      const response = await axios.get("https://long-rose-puppy-tux.cyclic.app/adminstocks/",{
         headers:{
           "Content-type":"application/json",
           authorization:`Bearer ${localStorage.getItem("token")}`
@@ -73,7 +73,7 @@ const Adminstocks = () => {
   // Admin deletes a stock
   const handleDeleteStock = async (stockId) => {
     try {
-      await axios.delete(`https://real-teal-crow-kilt.cyclic.app/${stockId}`,{
+      await axios.delete(`https://long-rose-puppy-tux.cyclic.app/adminstocks/${stockId}`,{
         method:"DELETE",
         headers:{
           "Content-type":"application/json",
@@ -107,7 +107,7 @@ const Adminstocks = () => {
     try {
       // Send the entire selectedStock object
       await axios.patch(
-        `https://real-teal-crow-kilt.cyclic.app/${selectedStock._id}`,
+        `https://long-rose-puppy-tux.cyclic.app/adminstocks/${selectedStock._id}`,
         selectedStock,{
           method:"PATCH",
           headers:{
@@ -149,7 +149,7 @@ const Adminstocks = () => {
   const handleAddStock = async () => {
     try {
       // Send a POST request to add a new stock
-      await axios.post("https://real-teal-crow-kilt.cyclic.app/adminstocks", newStock,
+      await axios.post("https://long-rose-puppy-tux.cyclic.app/adminstocks", newStock,
       {
         method:"POST",
         headers:{

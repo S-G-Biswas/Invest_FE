@@ -13,7 +13,7 @@ export default function SignUp() {
       e.preventDefault();
 
       console.log(username,email, password);
-      fetch("https://real-teal-crow-kilt.cyclic.app/users/register", {
+      fetch("https://long-rose-puppy-tux.cyclic.app/users/register", {
         method: "POST",
         crossDomain: true,
         headers: {

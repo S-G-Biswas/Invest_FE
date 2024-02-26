@@ -13,7 +13,7 @@ function TopStock() {
 
   const fetchTopStocks = async () => {
     try {
-      const response = await fetch("https://real-teal-crow-kilt.cyclic.app/");
+      const response = await fetch("https://long-rose-puppy-tux.cyclic.app/");
       const data = await response.json();
       console.log(data)
       setTopStocks(data.topStocks);

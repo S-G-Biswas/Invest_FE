@@ -26,7 +26,7 @@ export default function UserStock() {
   
     const fetchStock = async () => {
       try {
-        const response = await axios.get("https://real-teal-crow-kilt.cyclic.app/portfolio");
+        const response = await axios.get("https://long-rose-puppy-tux.cyclic.app/portfolio");
         setStock(response.data.stock);
         console.log(response.data.stock);
       } catch (error) {
@@ -36,7 +36,7 @@ export default function UserStock() {
 
     const deleteStock = async(_id) =>{
          console.log("running",_id);
-          let res = await fetch(`https://real-teal-crow-kilt.cyclic.app/portfolio/${_id}`,{
+          let res = await fetch(`https://long-rose-puppy-tux.cyclic.app/portfolio/${_id}`,{
             method:"DELETE",
             headers:{'content-type':'application-json'}
           });
