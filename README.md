@@ -1,3 +1,6 @@
+# Introduction
+This is the front-end part of our full stack website(Invest-Master).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
